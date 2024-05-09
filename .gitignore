@@ -1,0 +1,25 @@
+# Python Compiled Files
+__pycache__
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Local db
+db.sqlite3
+
+# Pyenv venv auto-activation file
+.python-version
+
+# Log files
+*.log*
+
+# Poetry
+.poetry
+version.cfg
+venv
+
+# Editors
+.idea
+.vscode
