@@ -3,17 +3,17 @@ from django.db import models
 
 
 class Author(models.Model):
-    first_name = models.CharField(blank=False, max_length=30)
+    first_name = models.CharField(max_length=30)
 
-    last_name = models.CharField(blank=False, max_length=30)
+    last_name = models.CharField(max_length=30)
 
-    birthday = models.DateTimeField(blank=False)
+    birthday = models.DateTimeField()
 
 
 class Book(models.Model):
-    name = models.CharField(blank=False, max_length=50)
+    name = models.CharField(max_length=50)
 
-    description = models.TextField(blank=True, null=True, max_length=200)
+    description = models.TextField(blank=True, max_length=200)
 
     author = models.ForeignKey(
         Author, on_delete=django.db.models.PROTECT, related_name="books"
