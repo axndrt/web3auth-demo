@@ -1,4 +1,3 @@
-from django import forms
 from eth_utils import is_hex_address
 
 
