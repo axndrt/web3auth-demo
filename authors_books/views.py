@@ -1,8 +1,5 @@
 from rest_framework import filters, viewsets
-from rest_framework_simplejwt.authentication import (
-    JWTAuthentication,
-    JWTTokenUserAuthentication,
-)
+from rest_framework_simplejwt.authentication import JWTTokenUserAuthentication
 
 from authors_books.models import Author, Book
 from authors_books.serializers import AuthorSerializer, BookSerializer
